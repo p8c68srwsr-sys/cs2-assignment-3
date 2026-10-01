@@ -70,14 +70,21 @@ header {
     text-transform: uppercase;
 }
 
-.cs2-navbar .nav-link {
-    color: #c9dbe8;
+.cs2-navbar .nav-link,
+.cs2-navbar .nav-link.active {
+    color: #c9dbe8 !important;
     font-weight: 600;
 }
 
 .cs2-navbar .nav-link:hover,
-.cs2-navbar .nav-link:focus {
-    color: #fff;
+.cs2-navbar .nav-link:focus,
+.cs2-navbar .nav-link.active:hover,
+.cs2-navbar .nav-link.active:focus {
+    color: #fff !important;
+}
+
+.cs2-navbar .nav-link.active {
+    font-weight: 800;
 }
 
 .cs2-navbar .navbar-toggler {
@@ -342,7 +349,6 @@ main {
     height: 100%;
 }
 
-/* Assignment #3 Task 2: CSS-only responsive cards. */
 .mq-card-group {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -389,7 +395,6 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Explicit breakpoints required by Task 1 + Task 2. */
 @media (max-width: 991.98px) {
     .site-grid {
         grid-template-columns: 1fr;
@@ -421,7 +426,6 @@ footer p {
         padding: 0.55rem 0.7rem;
     }
 
-    /* Tablet typography */
     .responsive-title,
     .hero-title {
         font-size: 3.2rem;
@@ -433,7 +437,6 @@ footer p {
 }
 
 @media (max-width: 575.98px) {
-    /* Mobile typography */
     .responsive-title,
     .hero-title {
         font-size: 2.25rem;
@@ -454,7 +457,6 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-    /* Desktop typography */
     .responsive-title,
     .hero-title {
         font-size: 4.7rem;
