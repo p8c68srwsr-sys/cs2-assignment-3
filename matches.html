@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CS2 Champions match schedule">
+    <title>CS2 Champions - Match Schedule</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="site-grid">
+
+<header>
+    <nav class="navbar navbar-expand-lg cs2-navbar" aria-label="Main navigation">
+        <div class="container-fluid px-sm-2 px-lg-4">
+            <a class="navbar-brand" href="index.html">Counter-Strike 2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav ms-auto gap-lg-2">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="matches.html">Schedule</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="founders.html">Founders</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<aside class="sidebar" aria-label="Schedule menu">
+    <h3>Schedule</h3>
+    <ul class="sidebar-menu">
+        <li><a href="#schedule">Matches</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</aside>
+
+<main>
+<section class="section-shell" id="schedule">
+<div class="container py-5 px-sm-2 px-lg-4">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+        <div>
+            <h1 class="responsive-title mb-2">Match Schedule &amp; Results</h1>
+            <p class="mb-0">Upcoming matches and recent tournament performances across major events.</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="Schedule actions">
+            <a href="index.html#gallery" class="btn btn-outline-light">Gallery</a>
+            <a href="contact.html" class="btn btn-primary">Contact</a>
+        </div>
+    </div>
+
+    <div class="table-wrap shadow-sm rounded-3">
+        <table class="table table-dark table-hover table-striped align-middle matches-table">
+            <thead>
+                <tr>
+                    <th scope="col">Date &amp; Time</th>
+                    <th scope="col">Tournament</th>
+                    <th scope="col">Matchup</th>
+                    <th scope="col">Format</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>September 20, 18:00</td>
+                    <td>PGL Major Astana</td>
+                    <td>
+                        <div class="team-wrapper">
+                            <img src="images/spirit.jpg" alt="Team Spirit" class="team-logo" loading="lazy">
+                            <details class="roster-pop">
+                                <summary>Team Spirit</summary>
+                                <div class="roster-box"><span>magixx (C)</span><span>donk</span><span>sh1ro</span><span>zont1x</span><span>tN1R</span></div>
+                            </details>
+                            <span class="vs-text">vs</span>
+                            <img src="images/faze.jpg" alt="FaZe Clan" class="team-logo" loading="lazy">
+                            <details class="roster-pop">
+                                <summary>FaZe Clan</summary>
+                                <div class="roster-box"><span>jcobbb (C)</span><span>Twistzz</span><span>frozen</span><span>Neityu</span><span>broky</span></div>
+                            </details>
+                        </div>
+                    </td>
+                    <td>BO3</td>
+                    <td class="status-completed">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>October 10, 19:00</td>
+                    <td>StarLadder Budapest</td>
+                    <td>
+                        <div class="team-wrapper">
+                            <img src="images/furia.jpg" alt="FURIA" class="team-logo" loading="lazy">
+                            <details class="roster-pop">
+                                <summary>FURIA</summary>
+                                <div class="roster-box"><span>FalleN (C)</span><span>yuurih</span><span>YEKINDAR</span><span>molodoy</span></div>
+                            </details>
+                            <span class="vs-text">vs</span>
+                            <img src="images/navi.jpg" alt="Natus Vincere" class="team-logo" loading="lazy">
+                            <details class="roster-pop">
+                                <summary>Natus Vincere</summary>
+                                <div class="roster-box"><span>Aleksib (C)</span><span>b1t</span><span>iM</span><span>w0nderful</span><span>makazze</span></div>
+                            </details>
+                        </div>
+                    </td>
+                    <td>BO3</td>
+                    <td class="status-upcoming">Upcoming</td>
+                </tr>
+
+                <tr>
+                    <td>October 25, 17:00</td>
+                    <td>Blast Premier Final</td>
+                    <td>
+                        <div class="team-wrapper">
+                            <img src="images/falcons.jpg" alt="Falcons" class="team-logo" loading="lazy">
+                            <details class="roster-pop">
+                                <summary>Falcons</summary>
+                                <div class="roster-box"><span>Karrigan (C)</span><span>m0NESY</span><span>NiKo</span><span>kyousuke</span><span>TeSeS</span></div>
+                            </details>
+                            <span class="vs-text">vs</span>
+                            <img src="images/vitality.jpg" alt="Team Vitality" class="team-logo" loading="lazy">
+                            <details class="roster-pop">
+                                <summary>Team Vitality</summary>
+                                <div class="roster-box"><span>apEX (C)</span><span>ZywOo</span><span>ropz</span><span>flameZ</span><span>mezii</span></div>
+                            </details>
+                        </div>
+                    </td>
+                    <td>BO3</td>
+                    <td class="status-upcoming">Upcoming</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row g-4 mt-lg-4">
+        <div class="col-sm-12 col-lg-4">
+            <div class="info-box p-4">
+                <h2 class="h5">Format</h2>
+                <p class="mb-0">BO3 means best-of-three maps.</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="info-box p-4">
+                <h2 class="h5">Roster</h2>
+                <p class="mb-0">Open a team name to view a compact roster list.</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="info-box p-4">
+                <h2 class="h5">Responsive table</h2>
+                <p class="mb-0">On smaller screens the table scrolls horizontally.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+
+<footer>
+    <p>Created by: Zhandos Nurgizat &amp; Zhalgasbayev Yesset Turlanuly | Software Engineering | SE-2503 | Front End Assignment #3</p>
+</footer>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
